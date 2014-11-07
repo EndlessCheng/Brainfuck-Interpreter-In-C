@@ -66,7 +66,7 @@ void interpret(char *c) {
 int main(int argc, char *argv[]) {
 	FILE *z;
 	q = argc;
-	if (q > 2) sscanf(argv[2], "%d", &d_num), line_num = (d_num - 1) / 10 + 1;
+	if (q > 2) sscanf(argv[2], "%d", &d_num), line_num = (d_num - 1) / COLUMN_MAX + 1;
 	if (z = fopen(argv[1], "r")) {
 		while ((b = getc(z)) > 0)
 			* s++ = b;
